@@ -1,10 +1,15 @@
-import './App.css';
-import Profile from "./components/Profile"
+import React from "react";
+import "./App.css";
+import ContactMe from "./components/ContactMe";
+import Name from "./components/Name";
+import Social from "./components/Social";
 
 function App() {
   return (
     <div className="App">
-      <Profile/>
+      <Name />
+      <ContactMe />
+      <Social />
     </div>
   );
 }
