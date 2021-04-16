@@ -1,38 +1,208 @@
-.App {
-  text-align: center;
+.header {
+  width: 100%;
+  height: 88px;
+  background-color: #424656;
+  font-weight: 900;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: white;
+  padding-left: 23px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section-container {
+  max-width: 600px;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+
+.section {
+  display: flex;
+  background-color: #1f80eb;
+  border-radius: 1em;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 5em;
+  padding: 1em;
+  margin: 1em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-weight: 900;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.profile-inputs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.work-inputs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  width: 100%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+
+.btn-save {
+  border: 0;
+  border-radius: 1em;
+  background-color: #e1486e;
+  color: white;
+  padding: 1em;
+  font-weight: 900;
+}
+
+.cv-list {
+  background-color: #a6abbd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+  border-radius: 1em;
+  padding: 2em 2em;
+  margin: 1em 0;
+}
+
+.cv-list-item {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+  padding: 1%;
+  margin: 1%;
+}
+
+.cv-list-item-btn {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1%;
+  margin-top: 3%;
+}
+
+.hide {
+  display: none;
+}
+
+.fas.fa-angle-down.rotate {
+  transform: rotate(180deg);
+  transition: 0.2s;
+}
+
+.fas.fa-angle-down {
+  transition: 0.2s;
+}
+
+.name,
+.ocupation,
+.email {
+  grid-column: 1 / 3;
+}
+
+.company,
+.textarea,
+.add-work {
+  grid-column: 1 / 3;
+}
+
+.degree,
+.degree-location,
+.institution,
+.add-education {
+  grid-column: 1 / 3;
+}
+
+/* cv part */
+
+.cv {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  width: 794px;
+}
+
+.cv-profile {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: baseline;
+}
+
+.cv-name {
+  width: 100%;
+  grid-column: 1 / 9;
+}
+
+.profile-labels {
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.profile-data {
+  padding-right: 5px;
+  font-size: 14px;
+}
+
+.work-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.work-item.labels.title {
+  width: 70%;
+  margin: 0;
+}
+
+.work-item.date {
+  width: 30%;
+}
+
+.work-item.labels.describe {
+  width: 100%;
+}
+
+.education-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.education-item.labels {
+  display: flex;
+  align-content: center;
+}
+
+.education-item.labels.degree {
+  width: 70%;
+}
+
+.education-item.labels.date {
+  width: 30%;
 }

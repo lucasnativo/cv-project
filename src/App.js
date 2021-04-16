@@ -1,15 +1,13 @@
 import React from "react";
 import "./App.css";
-import ContactMe from "./components/ContactMe";
-import Name from "./components/Name";
-import Social from "./components/Social";
+import Header from "./components/Header";
+import Body from "./components/Body";
 
 function App() {
   return (
     <div className="App">
-      <Name />
-      <ContactMe />
-      <Social />
+      <Header />
+      <Body />
     </div>
   );
 }
