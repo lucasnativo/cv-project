@@ -45,6 +45,12 @@ const Sections = ({
 
   const addEducationList = (e) => {
     e.preventDefault();
+    let inputsEducation = document.getElementsByClassName("education-inputs");
+    for (let input of inputsEducation) {
+      if (input.value === "") {
+        input.classList.add("empty");
+      }
+    }
     setEducationList([...educationList, education]);
     setEducation({
       degree: "",
